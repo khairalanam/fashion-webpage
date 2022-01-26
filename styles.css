@@ -79,15 +79,13 @@ header li a:visited {
     flex-direction: column;
 }
 
-.hero-section h2,
-.second-section h2 {
+h2 {
     color: #FFE456;
     font-size: 5rem;
     font-weight: 550;
 }
 
-.hero-section h3,
-.second-section h3 {
+h3 {
     color: #FFDF37;
     font-size: 2.5rem;
     font-weight: 575;
@@ -128,9 +126,61 @@ header li a:visited {
 
 .third-section {
     border: 1px solid black;
-    padding: 18em;
     display: flex;
     justify-content: space-around;
+    position: relative;
+}
+
+.third-section img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.third-section div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-section {
+    border: 1px solid black;
+    padding: 18em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fourth-section ul {
+    display: flex;
+    border: 1px solid black;
+    align-self: center;
+    padding: 2em;
+    justify-content: center;
+}
+
+.fourth-section li {
+    list-style-type: none;
+    padding: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-section i {
+    color: #FFD700;
+    font-size: 10em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    font-size: 2rem;
+    padding-left: 0.5em;
+    color: #FFD700;
 }
 
 
