@@ -287,9 +287,12 @@ footer {
     }
     .second-section img {
         min-width: 80%;
+        height: auto;
     }
     .third-section img {
-        min-width: 80%;
+        min-width: 100%;
+        align-self: center;
+        border: 1px solid red;
     }
     .fourth-section ul {
         display: flex;
