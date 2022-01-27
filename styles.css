@@ -288,7 +288,7 @@ footer {
         margin-top: 5em;
     }
     .second-section img {
-        min-width: 100%;
+        min-width: 200px;
         height: auto;
     }
     .third-section img {
