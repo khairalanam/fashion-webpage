@@ -286,7 +286,10 @@ footer {
         margin-top: 5em;
     }
     .second-section img {
-        max-width: 80%;
+        min-width: 80%;
+    }
+    .third-section img {
+        min-width: 80%;
     }
     .fourth-section ul {
         display: flex;
