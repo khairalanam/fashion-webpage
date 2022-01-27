@@ -11,6 +11,11 @@ html {
 
 body {
     font-family: 'Piazzolla', serif;
+    background-image: url(./images/background.png);
+    overflow: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 header {
@@ -19,7 +24,6 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 2em;
-    border: 1px solid black;
 }
 
 header h1 {
@@ -29,15 +33,18 @@ header h1 {
     text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
     text-decoration-line: underline;
     line-height: 1.36rem;
-    border: 1px solid black;
 }
 
 header .nav-bar {
     display: flex;
-    border: 1px solid black;
     align-self: center;
     padding: 2em;
     justify-content: center;
+}
+
+.icon.responsive {
+    display: block;
+    font-size: 10em;
 }
 
 .nav-bar.responsive {
@@ -52,10 +59,6 @@ header .nav-bar {
 
 .nav-bar.responsive li {
     font-size: 3rem;
-}
-
-.nav-bar.responsive {
-    display: none;
 }
 
 header li {
@@ -95,7 +98,6 @@ header li a:visited {
 }
 
 .hero-section {
-    border: 1px solid black;
     padding: 18em;
     display: flex;
     flex-direction: column;
@@ -125,10 +127,18 @@ h3 {
     background-color: rgba(255, 255, 255, 0);
     max-width: 10em;
     margin-top: 3em;
+    cursor: pointer;
+}
+
+.hero-section button a:link,
+.hero-section button a:visited,
+.hero-section button a:active,
+.hero-section button a:focus {
+    color: #FFD700;
+    text-decoration-line: none;
 }
 
 .second-section {
-    border: 1px solid black;
     padding: 18em;
     display: flex;
     justify-content: space-around;
@@ -136,8 +146,10 @@ h3 {
 
 .second-section img {
     max-width: 40%;
+    z-index: 1;
     height: auto;
     align-self: center;
+    opacity: 50%;
 }
 
 .second-section div {
@@ -147,7 +159,6 @@ h3 {
 }
 
 .third-section {
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -157,6 +168,7 @@ h3 {
     max-width: 100%;
     height: auto;
     align-self: center;
+    opacity: 50%;
 }
 
 .third-section div {
@@ -170,7 +182,6 @@ h3 {
 }
 
 .fourth-section {
-    border: 1px solid black;
     padding: 18em;
     display: flex;
     align-items: center;
@@ -179,7 +190,6 @@ h3 {
 
 .fourth-section ul {
     display: flex;
-    border: 1px solid black;
     align-self: center;
     padding: 2em;
     justify-content: center;
@@ -206,13 +216,15 @@ footer {
 }
 
 @media (max-width: 800px) {
+    body {
+        background-size: 100%;
+    }
     header {
         align-items: center;
         padding: 5em;
     }
     .fa {
         display: block;
-        border: 1px solid black;
         font-size: 5em;
         color: #FFDF37;
         cursor: pointer;
@@ -220,6 +232,7 @@ footer {
     a.icon {
         float: right;
         display: block;
+        position: relative;
     }
     .nav-bar.responsive {
         position: relative;
@@ -243,17 +256,39 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        position: fixed;
+        position: absolute;
         height: 100vh;
         width: 100%;
-        z-index: 0;
     }
     header a,
     i {
-        z-index: 100;
+        z-index: 12;
     }
-    .nav-bar.responsive:active,
-    .nav-bar.responsive:focus {
-        display: none;
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section button {
+        width: 9em;
+    }
+    .second-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-section div {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5em;
+    }
+    .second-section img {
+        max-width: 80%;
+    }
+    .fourth-section ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        align-self: center;
+        overflow: none;
     }
 }
