@@ -149,7 +149,7 @@ h3 {
     z-index: 1;
     height: auto;
     align-self: center;
-    opacity: 20%;
+    opacity: 30%;
 }
 
 .second-section div {
@@ -168,7 +168,7 @@ h3 {
     max-width: 100%;
     height: auto;
     align-self: center;
-    opacity: 50%;
+    opacity: 80%;
 }
 
 .third-section div {
