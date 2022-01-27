@@ -149,7 +149,7 @@ h3 {
     z-index: 1;
     height: auto;
     align-self: center;
-    opacity: 50%;
+    opacity: 20%;
 }
 
 .second-section div {
@@ -276,6 +276,7 @@ footer {
         font-size: 2rem;
         font-weight: 575;
         white-space: nowrap;
+        padding: 0 5em;
     }
     .second-section {
         flex-direction: column;
